@@ -1,0 +1,6 @@
+git command
+git show - to show what has changed in the committed file.
+git log - to show the commit history
+git checkout - to undo things, step back
+git reset - to undo the file that's being committed
+git init - to create repository
