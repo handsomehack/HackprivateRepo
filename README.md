@@ -1,1 +1,1 @@
-User1 : Hi!
+User2 : I want it that way
