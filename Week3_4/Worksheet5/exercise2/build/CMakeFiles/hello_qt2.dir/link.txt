@@ -1,3 +1,0 @@
-D:\cmake-3.19.0-rc1-win64-x64\bin\cmake.exe -E rm -f CMakeFiles\hello_qt2.dir/objects.a
-D:\Qt\Tools\mingw810_64\bin\ar.exe cr CMakeFiles\hello_qt2.dir/objects.a @CMakeFiles\hello_qt2.dir\objects1.rsp
-D:\Qt\Tools\mingw810_64\bin\g++.exe -mwindows -Wl,--whole-archive CMakeFiles\hello_qt2.dir/objects.a -Wl,--no-whole-archive -o hello_qt2.exe -Wl,--out-implib,libhello_qt2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\hello_qt2.dir\linklibs.rsp
