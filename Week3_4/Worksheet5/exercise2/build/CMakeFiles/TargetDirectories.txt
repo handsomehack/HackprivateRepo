@@ -1,0 +1,4 @@
+D:/2020_20310895/Week3_4/Worksheet5/exercise2/build/CMakeFiles/hello_qt2.dir
+D:/2020_20310895/Week3_4/Worksheet5/exercise2/build/CMakeFiles/edit_cache.dir
+D:/2020_20310895/Week3_4/Worksheet5/exercise2/build/CMakeFiles/rebuild_cache.dir
+D:/2020_20310895/Week3_4/Worksheet5/exercise2/build/CMakeFiles/hello_qt2_autogen.dir

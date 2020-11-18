@@ -1,0 +1,4 @@
+D:/2020_20310895/Week3_4/hello_qt_cm/build/CMakeFiles/hello_qt.dir
+D:/2020_20310895/Week3_4/hello_qt_cm/build/CMakeFiles/edit_cache.dir
+D:/2020_20310895/Week3_4/hello_qt_cm/build/CMakeFiles/rebuild_cache.dir
+D:/2020_20310895/Week3_4/hello_qt_cm/build/CMakeFiles/hello_qt_autogen.dir
