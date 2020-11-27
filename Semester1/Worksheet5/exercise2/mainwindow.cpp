@@ -83,13 +83,18 @@ void MainWindow::handleRemoveButton() {
 }
 
 void MainWindow::on_actionSave_triggered(){
+	//make a QString called item
 	QString item;
+	//get file name from user
 	QString fileName = QFileDialog::getSaveFileName(this, tr("Save File"),
                            "/home/jana/untitled.png",
                            tr("Text File (*.txt)"));
+	//create a file with the given name
 	QFile file(fileName);
 	file.open(QIODevice::WriteOnly | QIODevice::Text);
+	//declare out as QTextStream for file
 	QTextStream out(&file);
+	//print out all of the item in listView
 	for (int i = 0; i < stockList.rowCount(); i++){
 		out <<"Item:" << i+1 << " : " << stockList.getItemName(i) << " Cost: " << stockList.getItemCost(i) << " StockLevel: " << stockList.getItemStock(i)<< "\n";
 	}
