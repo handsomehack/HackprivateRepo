@@ -7,8 +7,8 @@
 *.o
 *.so
 *.a
-hello_qt2_autongen/
-hello_qt_autongen/
+hello_qt2_autogen/
+hello_qt_autogen/
 msvc_build/
 second_build/
 msvc_dynamic/
