@@ -9,6 +9,7 @@
 #include <QFile>
 #include <QTextStream>
 #include <QDataStream>
+#include <QIcon>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -83,6 +84,7 @@ void MainWindow::handleRemoveButton() {
 }
 
 void MainWindow::on_actionSave_triggered(){
+
 	//make a QString called item
 	QString item;
 	//get file name from user

@@ -64,14 +64,6 @@
     </property>
    </widget>
   </widget>
-  <widget class="QToolBar" name="mainToolBar">
-   <attribute name="toolBarArea">
-    <enum>TopToolBarArea</enum>
-   </attribute>
-   <attribute name="toolBarBreak">
-    <bool>false</bool>
-   </attribute>
-  </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -105,10 +97,13 @@
   <action name="actionSave">
    <property name="icon">
     <iconset>
-     <normaloff>Paomedia-Small-N-Flat-Floppy.ico</normaloff>Paomedia-Small-N-Flat-Floppy.ico</iconset>
+     <normaloff>Icons/saveicon.png</normaloff>Icons/saveicon.png</iconset>
    </property>
    <property name="text">
     <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
    </property>
   </action>
  </widget>
