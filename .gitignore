@@ -8,7 +8,7 @@
 *.so
 *.a
 hello_qt2_autongen/
-hello_qt1_autongen/
+hello_qt_autongen/
 msvc_build/
 second_build/
 msvc_dynamic/
