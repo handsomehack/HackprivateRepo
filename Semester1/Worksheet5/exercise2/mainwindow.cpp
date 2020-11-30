@@ -12,10 +12,10 @@
 #include <QIcon>
 
 MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::MainWindow)
+    	QMainWindow(parent),
+	ui(new Ui::MainWindow)
 {
-    ui->setupUi(this);
+	ui->setupUi(this);
 
 	// Link the ListModel to the ListView
 	ui->listView->setModel( &stockList );
@@ -31,7 +31,7 @@ MainWindow::MainWindow(QWidget *parent) :
 
 MainWindow::~MainWindow()
 {
-    delete ui;
+    	delete ui;
 }
 
 
