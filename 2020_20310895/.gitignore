@@ -13,6 +13,7 @@ msvc_build/
 second_build/
 msvc_dynamic/
 msvc_static/
+QtVTKExample_autogen/
 *.depends
 #-----------------------------------------------------------------
 
