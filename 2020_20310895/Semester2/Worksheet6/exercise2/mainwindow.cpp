@@ -1,16 +1,3 @@
-#include <vtkSmartPointer.h>
-#include <vtkCubeSource.h>
-#include <vtkActor.h>
-#include <vtkProperty.h>
-#include <vtkCamera.h>
-#include <vtkPolyData.h>
-#include <vtkDataSetMapper.h>
-#include <vtkRenderWindow.h>
-#include <vtkRenderWindowInteractor.h>
-#include <vtkRenderer.h>
-#include <vtkNamedColors.h>
-#include <vtkNew.h>
-#include <vtkGenericOpenGLRenderWindow.h>
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
@@ -54,6 +41,11 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
 	renderer->AddActor(actor);
 	renderer->SetBackground( 100,100,100 );
 
+	// Add shrink filter
+	vtkSmartPointer<vtkShrinkFilter> shrinkFilter = vtkSmartPointer<vtkShrinkFilter>::New();
+
+	mapper->SetInputConnection(shrinkFilter->GetOutputPort());
+
 	// Setup the renderers's camera
 	renderer->ResetCamera();
 	renderer->GetActiveCamera()->Azimuth(30);
@@ -70,3 +62,23 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+
+void MainWindow::on_ClipBox_clicked(bool checked)
+{
+	if (checked) {
+		shrinkFilter->SetShrinkFactor(.8);
+	}
+	else {
+		shrinkFilter->SetShrinkFactor(1);
+	}
+	shrinkFilter->Update();
+	ui->qvtkWidget->GetRenderWindow()->Render();
+}
+
+void MainWindow::on_ShrinkBox_clicked(bool checked)
+{
+
+}
+
+
