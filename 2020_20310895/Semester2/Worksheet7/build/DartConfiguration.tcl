@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: D:/2020_20310895/2020_20310895/Semester2/Worksheet7
-BuildDirectory: D:/2020_20310895/2020_20310895/Semester2/Worksheet7/build
+SourceDirectory: D:/HackPrivateRepo/2020_20310895/Semester2/Worksheet7
+BuildDirectory: D:/HackPrivateRepo/2020_20310895/Semester2/Worksheet7/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "D:/cmake-3.19.0-rc1-win64-x64/bin/cmake.exe" "D:/2020_20310895/2020_20310895/Semester2/Worksheet7"
+ConfigureCommand: "D:/cmake-3.19.0-rc1-win64-x64/bin/cmake.exe" "D:/HackPrivateRepo/2020_20310895/Semester2/Worksheet7"
 MakeCommand: D:\cmake-3.19.0-rc1-win64-x64\bin\cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
