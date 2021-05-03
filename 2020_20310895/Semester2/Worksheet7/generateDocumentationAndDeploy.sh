@@ -5,7 +5,7 @@ mkdir code_docs
 cd code_docs
 # Use the Token to gain access to the private repo.
 git clone -b gh-pages "https://${GH_REPO_TOKEN}@${GH_REPO_REF}"
-cd $GH_REPO_NAME
+cd $GH_REPO_NAME/2020_20310895/Semester2/Worksheet7
 git config --global push.default simple
 git config user.name "Travis CI"
 git config user.email "travis@travis-ci.com"
