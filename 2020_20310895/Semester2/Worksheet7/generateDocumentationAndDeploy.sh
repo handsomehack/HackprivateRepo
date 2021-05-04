@@ -12,7 +12,8 @@ git config user.email "travis@travis-ci.com"
 
 rm -rf *
 echo "" > .nojekyll
-doxygen worksheet7/$DOXYFILE 2>&1 | tee doxygen.log
+cd 2020_20310895/Semester2/Worksheet7
+doxygen $DOXYFILE 2>&1 | tee doxygen.log
 if [ -d "html" ] && [ -f "html/index.html" ]; then
 	git add --all
 	git commit -m "Deploy docs: ${TRAVIS_BUILD_NUMBER}" -m "Commit: ${TRAVIS_COMMIT}"
