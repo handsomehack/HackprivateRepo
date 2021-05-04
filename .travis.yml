@@ -29,14 +29,13 @@ script:
   - cmake .
   - make
   - make test
-  - cd ..
-  - cd ..
-  - cd ..
+
 
 # After successfully building and testing your software we give Doxygen the
 # instruction to scan the code for docstrings and generate the html output.
 # The bulk of these instructions is encapsulated in a script.
 after_success:
-  - cd $TRAVIS_BUILD_DIR
+  #- cd $TRAVIS_BUILD_DIR
+  - dir
   - chmod +x generateDocumentationAndDeploy.sh
   - ./generateDocumentationAndDeploy.sh
