@@ -3,7 +3,6 @@ __AUTHOR__="Jeroen de Bruijn"
 set -e
 mkdir code_docs
 cd code_docs
-dir
 # Use the Token to gain access to the private repo.
 git clone -b gh-pages "https://${GH_REPO_TOKEN}@${GH_REPO_REF}"
 cd $GH_REPO_NAME
