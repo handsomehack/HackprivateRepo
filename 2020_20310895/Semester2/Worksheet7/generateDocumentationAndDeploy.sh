@@ -3,6 +3,7 @@ __AUTHOR__="Jeroen de Bruijn"
 set -e
 mkdir code_docs
 cd code_docs
+dir
 # Use the Token to gain access to the private repo.
 git clone -b gh-pages "https://${GH_REPO_TOKEN}@${GH_REPO_REF}"
 cd $GH_REPO_NAME
@@ -12,7 +13,6 @@ git config user.email "travis@travis-ci.com"
 
 rm -rf *
 echo "" > .nojekyll
-dir
 doxygen $DOXYFILE 2>&1 | tee doxygen.log
 if [ -d "html" ] && [ -f "html/index.html" ]; then
 	git add --all
