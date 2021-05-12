@@ -16,6 +16,9 @@ msvc_static/
 QtVTKExample_autogen/
 *.depends
 *.tcl
+*.cmake
+*.ini
+*.nsi
 #-----------------------------------------------------------------
 
 #msvc
