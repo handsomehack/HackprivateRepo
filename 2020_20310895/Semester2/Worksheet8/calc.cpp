@@ -2,7 +2,7 @@
 // calc_cmake/calc.cpp --------------------------------
 #include <sstream>
 #include <iostream>
-#include "adder.h"
+#include "maths.h"
 int main( int argc, char *argv[] ) {
 	int a, b, c;
 	if(argc != 3) return 1;
