@@ -104,13 +104,19 @@ void MainWindow::on_checkBox_clicked(bool checked)
 void MainWindow::on_ClipBox_clicked(bool checked) {
         if (checked) {
 
-        planeLeft->SetOrigin(0.0, 0.0, 0.0);
-		planeLeft->SetNormal(-1.0, 0.0, 0.0);
-		clipfilter->SetInputConnection(reader->GetOutputPort());
-		clipfilter->SetClipFunction(planeLeft.Get());
-        mapper->SetInputConnection(clipfilter->GetOutputPort());
+			planeLeft->SetOrigin(0.0, 0.0, 0.0);
+			planeLeft->SetNormal(-1.0, 0.0, 0.0);
+			clipfilter->SetInputConnection(reader->GetOutputPort());
+			clipfilter->SetClipFunction(planeLeft.Get());
+			mapper->SetInputConnection(clipfilter->GetOutputPort());
 
         }
+		else {
+			shrinkfilter->SetInputConnection(reader->GetOutputPort());
+			shrinkfilter->SetShrinkFactor(1);
+			shrinkfilter->Update();
+			mapper->SetInputConnection(shrinkfilter->GetOutputPort());
+		}
 
 	ui->qvtkWidget->GetRenderWindow()->Render();
 }
@@ -121,6 +127,12 @@ void MainWindow::on_ShrinkBox_clicked(bool checked) {
 
 		shrinkfilter->SetInputConnection(reader->GetOutputPort());
 		shrinkfilter->SetShrinkFactor(.8);
+		shrinkfilter->Update();
+		mapper->SetInputConnection(shrinkfilter->GetOutputPort());
+	}
+	else {
+		shrinkfilter->SetInputConnection(reader->GetOutputPort());
+		shrinkfilter->SetShrinkFactor(1);
 		shrinkfilter->Update();
 		mapper->SetInputConnection(shrinkfilter->GetOutputPort());
 	}
