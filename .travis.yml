@@ -29,9 +29,6 @@ script:
   - cmake .
   - make
   - make test
-  - cd ..
-  - cd ..
-  - cd ..
 
 # After successfully building and testing your software we give Doxygen the
 # instruction to scan the code for docstrings and generate the html output.
