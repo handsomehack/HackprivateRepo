@@ -10,7 +10,7 @@ branches:
 env:
   global:
     - GH_REPO_NAME: HackprivateRepo
-    - DOXYFILE: $TRAVIS_BUILD_DIR
+    - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
     - GH_REPO_REF: github.com/handsomehack/HackprivateRepo.git
 
 # The virtual machines created by Travis do not by default have doxygen
